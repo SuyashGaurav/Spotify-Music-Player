@@ -262,15 +262,15 @@ a {
 
 .album {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
     margin-left: 1rem;
-    width: 12%;
+    width: 30%;
 }
 
 .album-title {
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 2rem;
     margin-bottom: 0.2rem;
 }
@@ -358,7 +358,8 @@ a {
 }
 
 .progress-bar {
-    width: 18rem;
+    width: 100%;
+    height: 8px;
     appearance: none;
     background-color: transparent;
     cursor: pointer;
@@ -366,27 +367,31 @@ a {
 }
 
 .progress-bar::-webkit-slider-runnable-track {
-    background-color: #ddd;
-    border-radius: 100px;
-    height: 0.2rem;
+    background-color: #555;
+    border-radius: 5px;
+    height: 4px;
 }
 
 .progress-bar::-webkit-slider-thumb {
     appearance: none;
-    height: 0.8rem;
-    width: 0.8rem;
+    height: 14px;
+    width: 14px;
     background-color: #1bd760;
     border-radius: 50%;
-    margin-top: -6px;
+    margin-top: -5px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
+
 
 .curr-time {
     font-size: 13px;
     font-weight: 100;
+    margin-right: 0.6rem;
 }
 
 .tot-time{
     font-size: 13px;
     font-weight: 100;
-    margin-left: -1.5rem;
+    margin-left: -1.2rem;
 }

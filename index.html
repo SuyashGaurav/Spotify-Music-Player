@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Whisper&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <link rel="icon" href="images/logo.png">
     <title>Spotify - Web Player: Music for everyone</title>
 </head>
@@ -81,7 +82,7 @@
                     <p class="card-title">Mahiya Jinna Sohna</p>
                     <p class="card-info">Darshan Ravel</p>
                 </div>
-                <div class="card">
+                <div class="card" data-src="songs/Alone.mp3" data-title="Alone" data-artist="Marshmello">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="images/card7img.jpg" class="card-img">
                     <p class="card-title">Alone</p>
@@ -105,13 +106,13 @@
                     <p class="card-title">Bella Ciao</p>
                     <p class="card-info">Money Heist</p>
                 </div>
-                <div class="card">
+                <div class="card" data-src="songs/Sunflower.mp3" data-title="Sunflower - Spider-Man" data-artist="Post Malone, Swae Lee">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="images/card9img.jpg" class="card-img">
                     <p class="card-title">Sunflower - Spider-Man</p>
                     <p class="card-info">Post Malone, Swae Lee</p>
                 </div>
-                <div class="card">
+                <div class="card" data-src="songs/Happier.mp3" data-title="Happier" data-artist="Marshmello">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="images/card10img.jpg" class="card-img">
                     <p class="card-title">Happier</p>
@@ -174,6 +175,7 @@
         </div>
 
         <div class="music-player">
+            <audio id="audioPlayer" src="" type="audio/mp3"></audio>
             <div class="album">
                 <img src="images/card10img.jpg">
                 <div>

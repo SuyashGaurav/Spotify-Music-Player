@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Whisper&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../images/logo.png">
+    <script src="../index.js"></script>
     <title>Top Global Songs</title>
 </head>
 <body>
@@ -64,14 +65,14 @@
                 <p class="card-info">Money Heist</p>
             </div>
                 
-            <div class="card">
+            <div class="card" data-src="../songs/Happier.mp3" data-title="Happier" data-artist="Marshmello">
                 <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                 <img src="../images/card10img.jpg" class="card-img">
                 <p class="card-title">Happier</p>
                 <p class="card-info">Marshmello, Bastille</p>
             </div>
 
-            <div class="card">
+            <div class="card" data-src="../songs/Sunflower.mp3" data-title="Sunflower - Spider-Man" data-artist="Post Malone, Swae Lee">
                 <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                 <img src="../images/card9img.jpg" class="card-img">
                 <p class="card-title">Sunflower - Spider-Man</p>
@@ -93,7 +94,42 @@
             </div>
         </div>
 
-        <div class="music-player">Music player</div>
+        <div class="music-player">
+            <audio id="audioPlayer" src="" type="audio/mp3"></audio>
+            <div class="album">
+                <img src="../images/card10img.jpg">
+                <div>
+                    <div class="album-title">Happier</div>
+                    <div class="album-info">Marshmello</div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="../images/player_icon1.png" class="player-control-icon">
+                    <img src="../images/player_icon2.png" class="player-control-icon">
+                    <img src="../images/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 1.8rem;">
+                    <img src="../images/player_icon4.png" class="player-control-icon">
+                    <img src="../images/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" class="progress-bar" min="0" max="100" value="50" step="1" >
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-download"></i>
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-slider-container">
+                    <input type="range" class="volume-slider" min="0" max="100" value="50" step="1" />
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
