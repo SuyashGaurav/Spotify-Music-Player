@@ -23,6 +23,8 @@ body {
     flex: 1;
     border-radius: 1rem;   /* 1rem = 16px */
     overflow: auto;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .music-player {
@@ -147,5 +149,11 @@ a {
 }
 
 .sticky-nav {
-    
+    position: sticky;
+    top: 0;
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
