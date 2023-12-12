@@ -17,7 +17,7 @@
             <div class="nav">
                 <div class="nav-option" style="opacity: 1;">
                     <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </div>
                 <div class="nav-option">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -52,18 +52,162 @@
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
                     <img src="images/backward_icon.png">
-                    <img src="images/forward_icon.png">
+                    <img src="images/forward_icon.png" class="hide">
                 </div>
                 <div class="sticky-nav-options">
-                    <button class="badge">Explore Premium</button>
-                    <button class="badge"><i class="fa-regular fa-circle-down"></i>Install App</button>
-                    <i class="fa-regular fa-user"></i>
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge dark-badge nav-item" onclick="window.location.href='https://download.scdn.co/SpotifySetup.exe'"><i class="fa-regular fa-circle-down" style="margin-right: 0.5rem;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
                 </div>
             </div>
-            <div class="cards"></div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <a href="playlist/global_50.html">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                        <img src="images/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updated of the most played tracks ...</p>
+                    </a>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card2img.jpeg" class="card-img">
+                    <p class="card-title">Mahiya Jinna Sohna</p>
+                    <p class="card-info">Darshan Ravel</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card7img.jpg" class="card-img">
+                    <p class="card-title">Alone</p>
+                    <p class="card-info">Marshmello</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card3img.jpeg" class="card-img">
+                    <p class="card-title">Mere Paas Tum Ho (Lofi)</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card4img.jpg" class="card-img">
+                    <p class="card-title">Aashiyan</p>
+                    <p class="card-info">Pritam, Shreya Ghoshal, Nikhil Paul George</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card8img.jpg" class="card-img">
+                    <p class="card-title">Bella Ciao</p>
+                    <p class="card-info">Money Heist</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card9img.jpg" class="card-img">
+                    <p class="card-title">Sunflower - Spider-Man</p>
+                    <p class="card-info">Post Malone, Swae Lee</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card10img.jpg" class="card-img">
+                    <p class="card-title">Happier</p>
+                    <p class="card-info">Marshmello, Bastille</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card11img.jpg" class="card-img">
+                    <p class="card-title">Vaaste</p>
+                    <p class="card-info">Dhvani Bhanushali, Nikhil D'Souza</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card12img.jpg" class="card-img">
+                    <p class="card-title">Bad Liar</p>
+                    <p class="card-info">Imagine Dragons</p>
+                </div>
+                <div class="card">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card13img.jpg" class="card-img">
+                    <p class="card-title">Choo Lo</p>
+                    <p class="card-info">The Local Train</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <a href="playlist/global_50.html">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                        <img src="images/card5img.jpeg" class="card-img">
+                        <p class="card-title">Top Global Songs</p>
+                        <p class="card-info">Currently trending global songs</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="playlist/indian_songs.html">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                        <img src="images/card6img.jpeg" class="card-img">
+                        <p class="card-title">Top Indian Songs</p>
+                        <p class="card-info">Currently trending in India</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="playlist/global_50.html">
+                        <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                        <img src="images/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updated of the most played tracks ...</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="line">
+                    <p style="font-family: 'Montserrat', sans-serif; font-size: 10px;">@Spotify-Clone-2024</p>
+                </div>
+            </div>
+            
         </div>
-        
-        <div class="music-player">Music player</div>
+
+        <div class="music-player">
+            <div class="album">
+                <img src="images/card10img.jpg">
+                <div>
+                    <div class="album-title">Happier</div>
+                    <div class="album-info">Marshmello</div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="images/player_icon1.png" class="player-control-icon">
+                    <img src="images/player_icon2.png" class="player-control-icon">
+                    <img src="images/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 1.8rem;">
+                    <img src="images/player_icon4.png" class="player-control-icon">
+                    <img src="images/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" class="progress-bar" min="0" max="100" value="50" step="1" >
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-download"></i>
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-slider-container">
+                    <input type="range" class="volume-slider" min="0" max="100" value="50" step="1" />
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
