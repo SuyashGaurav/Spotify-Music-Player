@@ -451,6 +451,9 @@ a {
     .badge {
         font-size: 0.6rem;
     }
+}
+
+@media (max-width: 375px){
     .player-controls i {
         font-size: 0.8rem;
         margin-right: 0.5rem;
