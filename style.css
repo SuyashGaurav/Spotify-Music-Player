@@ -324,7 +324,7 @@ a {
     margin-bottom: 0.7rem;
 }
 
-@media (max-width: 750px){
+@media (min-width: 560px) and (max-width: 750px){
     .control {
         display: none;
     }
@@ -438,5 +438,14 @@ a {
         position: relative;
         right: 4px;
         top: 8px;
+    }
+    .control {
+        display: none;
+    }
+    .player {
+        margin-right: 20px;
+    }
+    .icons {
+        display: none;
     }
 }
