@@ -129,3 +129,44 @@ function toggleMute() {
         muteIcon.classList.add("fa-volume-xmark");
     }
 }
+
+function showLyricsWindow() {
+    var lyricsBox = document.getElementById('lyricsBox');
+    lyricsBox.innerHTML = "Lyrics not found";
+    lyricsBox.style.display = 'block';
+    setTimeout(()=> {
+        lyricsBox.style.display = "none";
+    }, 2000)
+}
+
+function showPlaylist() {
+    var lyricsBox = document.getElementById('lyricsBox');
+    lyricsBox.innerHTML = "Playlist not found";
+    lyricsBox.style.display = 'block';
+    setTimeout(()=> {
+        lyricsBox.style.display = "none";
+    }, 2000)
+}
+
+//download
+window.addEventListener('load', function () {
+    var downloadIcon = document.getElementById('downloadIcon');
+    
+    if (downloadIcon) {
+      downloadIcon.addEventListener('click', function() {
+        var audioPlayer = document.getElementById('audioPlayer');
+        var downloadLink = document.createElement('a');
+
+        downloadLink.href = audioPlayer.src;
+        downloadLink.download = `${audioPlayer.src}`;
+
+        document.body.appendChild(downloadLink);
+
+        downloadLink.click();
+
+        document.body.removeChild(downloadLink);
+      });
+    } else {
+      console.error('Download icon not found.');
+    }
+  });

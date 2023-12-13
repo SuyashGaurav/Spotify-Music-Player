@@ -325,6 +325,7 @@ a {
 .control i {
     padding-right: 0.5rem;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .control i:hover {
@@ -473,4 +474,16 @@ a {
         font-size: 0.8rem;
         margin-right: 0.5rem;
     }
+}
+
+#lyricsBox {
+    position: fixed;
+    bottom: 70px;
+    right: 140px;
+    background-color: #2e2d2d;
+    border: 1px solid #1e1d1d;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    opacity: 0.9;
 }
