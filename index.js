@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
             audioPlayer.src = this.getAttribute('data-src');
 
             audioPlayer.play();
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
 
             // Update album information
             albumTitle.textContent = this.getAttribute('data-title');

@@ -100,6 +100,8 @@ function search() {
         cardElement.addEventListener('click', function () {
             // Set the audio source to the clicked card's data-src
             audioPlayer.src = this.getAttribute('data-src');
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
 
             audioPlayer.play();
 
