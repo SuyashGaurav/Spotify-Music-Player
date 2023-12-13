@@ -337,6 +337,9 @@ a {
     .icons {
         display: none;
     }
+    .album-title {
+        font-size: 0.8rem;
+    }
 }
 
 .player-controls {
