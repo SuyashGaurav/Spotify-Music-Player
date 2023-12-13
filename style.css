@@ -199,6 +199,16 @@ a {
     margin-top: 1rem;
 }
 
+.card-playlist {
+    position: relative;
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
 .play-icon {
     position: absolute;
     top: 50%;

@@ -58,3 +58,41 @@ document.addEventListener('DOMContentLoaded', function () {
         return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     }
 });
+
+
+function showGlobalContent() {
+    var globalContent = document.getElementById("globalContent");
+    globalContent.style.display = "block";
+    var existingContent = document.getElementById("existing-content");
+    existingContent.style.display = "none";
+}
+
+
+function showIndianContent() {
+    var indianContent = document.getElementById("indianContent");
+    indianContent.style.display = "block";
+    var existingContent = document.getElementById("existing-content");
+    existingContent.style.display = "none";
+}
+
+function showExistingContent() {
+    var indianContent = document.getElementById("indianContent");
+    indianContent.style.display = "none";
+    var globalContent = document.getElementById("globalContent");
+    globalContent.style.display = "none";
+    var searchContent = document.getElementById("searchContent");
+    searchContent.style.display = "none";
+    var existingContent = document.getElementById("existing-content");
+    existingContent.style.display = "block";
+}
+
+function showSearchContent(){
+    var indianContent = document.getElementById("indianContent");
+    indianContent.style.display = "none";
+    var globalContent = document.getElementById("globalContent");
+    globalContent.style.display = "none";
+    var existingContent = document.getElementById("existing-content");
+    existingContent.style.display = "none";
+    var searchContent = document.getElementById("searchContent");
+    searchContent.style.display = "block";
+}
