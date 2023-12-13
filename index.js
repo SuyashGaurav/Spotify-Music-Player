@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // Set the audio source to the clicked card's data-src
             audioPlayer.src = this.getAttribute('data-src');
 
-            // Play the audio
             audioPlayer.play();
 
             // Update album information
@@ -29,6 +28,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 currTime.textContent = formatTime(audioPlayer.currentTime);
                 totTime.textContent = formatTime(audioPlayer.duration);
             });
+        });
+    });
+
+    // Toggle play/pause icon functionality
+    playPauseIcon.addEventListener('click', function () {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseIcon.classList.remove('fa-play');
+            playPauseIcon.classList.add('fa-pause');
+        } else {
+            audioPlayer.pause();
+            playPauseIcon.classList.remove('fa-pause');
+            playPauseIcon.classList.add('fa-play');
+        }
+        // Update playback bar
+        audioPlayer.addEventListener('timeupdate', function () {
+            const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+            playbackBar.value = progress;
+            currTime.textContent = formatTime(audioPlayer.currentTime);
+            totTime.textContent = formatTime(audioPlayer.duration);
         });
     });
 

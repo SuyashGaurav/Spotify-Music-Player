@@ -22,7 +22,7 @@
                 </div>
                 <div class="nav-option">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
+                    <a href="../search/search.html">Search</a>
                 </div>
             </div>
             <div class="library">
@@ -95,25 +95,25 @@
         </div>
 
         <div class="music-player">
-            <audio id="audioPlayer" src="" type="audio/mp3"></audio>
+            <audio id="audioPlayer" src="../songs/Happier.mp3" type="audio/mp3"></audio>
             <div class="album">
                 <img src="../images/card10img.jpg">
                 <div>
                     <div class="album-title">Happier</div>
-                    <div class="album-info">Marshmello</div>
+                    <div class="album-info hide-2">Marshmello</div>
                 </div>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart hide-2"></i>
             </div>
 
             <div class="player">
                 <div class="player-controls">
-                    <img src="../images/player_icon1.png" class="player-control-icon">
-                    <img src="../images/player_icon2.png" class="player-control-icon">
-                    <img src="../images/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 1.8rem;">
-                    <img src="../images/player_icon4.png" class="player-control-icon">
-                    <img src="../images/player_icon5.png" class="player-control-icon">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause" id="playPauseIcon"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
                 </div>
-                <div class="playback-bar">
+                <div class="playback-bar hide-2">
                     <span class="curr-time">00:00</span>
                     <input type="range" class="progress-bar" min="0" max="100" value="50" step="1" >
                     <span class="tot-time">3:33</span>

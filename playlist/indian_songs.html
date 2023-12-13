@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Whisper&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../index.js"></script>
     <link rel="icon" href="../images/logo.png">
     <title>Top Indian Songs</title>
 </head>
@@ -21,7 +22,7 @@
                 </div>
                 <div class="nav-option">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
+                    <a href="../search/search.html">Search</a>
                 </div>
             </div>
             <div class="library">
@@ -51,34 +52,34 @@
         <div class="main-content">
             <h2>Top Indian Playlist</h2>
             <div class="cards-container">
-                <div class="card">
+                <div class="card" data-src="../songs/Aashiyan.mp3" data-title="Aashiyan" data-artist="Pritam, Shreya Ghoshal">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="../images/card4img.jpg" class="card-img">
                     <p class="card-title">Aashiyan</p>
                     <p class="card-info">Pritam, Shreya Ghoshal, Nikhil Paul George</p>
                 </div>
-                <div class="card">
+                <div class="card" data-src="../songs/Mahiye.mp3" data-title="Mahiya Jinna Sohna" data-artist="Darshan Ravel">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="../images/card2img.jpeg" class="card-img">
                     <p class="card-title">Mahiya Jinna Sohna</p>
                     <p class="card-info">Darshan Ravel</p>
                 </div>
-                
-                <div class="card">
+
+                <div class="card" data-src="../songs/Mere-paas.mp3" data-title="Mere Paas Tum Ho" data-artist="Rahat Fateh Ali Khan">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="../images/card3img.jpeg" class="card-img">
-                    <p class="card-title">Mere Paas Tum Ho (Lofi)</p>
+                    <p class="card-title">Mere Paas Tum Ho</p>
                     <p class="card-info">Rahat Fateh Ali Khan</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-src="../songs/Vaaste.mp3" data-title="Vaaste" data-artist="Dhvani Bhanushali, Nikhil D'Souza">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="../images/card11img.jpg" class="card-img">
                     <p class="card-title">Vaaste</p>
                     <p class="card-info">Dhvani Bhanushali, Nikhil D'Souza</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-src="../songs/Choo-Lo.mp3" data-title="Choo Lo" data-artist="The Local Train">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="../images/card13img.jpg" class="card-img">
                     <p class="card-title">Choo Lo</p>
@@ -95,9 +96,40 @@
         </div>
 
         <div class="music-player">
-            <div class="album"></div>
-            <div class="player"></div>
-            <div class="control"></div>
+            <audio id="audioPlayer" src="../songs/Happier.mp3" type="audio/mp3"></audio>
+            <div class="album">
+                <img src="../images/card10img.jpg">
+                <div>
+                    <div class="album-title">Happier</div>
+                    <div class="album-info hide-2">Marshmello</div>
+                </div>
+                <i class="fa-regular fa-heart hide-2"></i>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause" id="playPauseIcon"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="playback-bar hide-2">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" class="progress-bar" min="0" max="100" value="50" step="1" >
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-download"></i>
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-slider-container">
+                    <input type="range" class="volume-slider" min="0" max="100" value="50" step="1" />
+                </div>
+            </div>
         </div>
     </div>
 </body>

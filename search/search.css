@@ -1,0 +1,41 @@
+div.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+input#searchInput {
+    width: 280px;
+    padding: 13px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 17px;
+}
+
+input#searchInput:hover {
+    box-shadow: 2px 2px 6px rgb(68, 68, 68);
+    transition: all 0.2s ease-in 0s;
+}
+
+button#searchButton {
+    background-color: #1DB954; /* Spotify green color */
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button#searchButton:hover {
+    font-size: 15px;
+    box-shadow: 1px 1px 8px rgb(82, 81, 81);
+    transition: all 0.2s ease-in 0s;
+}
+
+input#searchInput::placeholder {
+    color: #b3b3b3; /* Light gray color */
+}

@@ -331,23 +331,38 @@ a {
     .sidebar {
         display: none;
     }
+    .player {
+        margin-right: 20px;
+    }
 }
 
 .player-controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 2rem;
+    margin-left: 0.8rem;
 }
 
-.player-control-icon {
-    height: 1rem;
-    margin-right: 1.75rem;
+.player-controls i {
+    margin-right: 1rem;
     opacity: 0.6;
+    font-size: 1.1rem;
 }
 
-.player-control-icon:hover {
+.player-controls i:hover {
     opacity: 1;
+    cursor: pointer;
+}
+
+#playPauseIcon {
+    opacity: 1; 
+    font-size: 1.5rem;
+}
+
+#playPauseIcon:hover {
+    opacity: 1; 
+    font-size: 1.8rem;
+    transition: all 0.25s ease-in 0s;
 }
 
 .playback-bar {
@@ -358,7 +373,7 @@ a {
 }
 
 .progress-bar {
-    width: 100%;
+    width: 300px;
     height: 8px;
     appearance: none;
     background-color: transparent;
@@ -394,4 +409,16 @@ a {
     font-size: 13px;
     font-weight: 100;
     margin-left: -1.2rem;
+}
+
+@media (max-width: 560px){
+    .hide-2 {
+        display: none;
+    }
+    .album-title {
+        font-weight: 500;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
 }
