@@ -448,4 +448,7 @@ a {
     .icons {
         display: none;
     }
+    .badge {
+        font-size: 0.6rem;
+    }
 }
