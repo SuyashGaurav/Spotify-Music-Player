@@ -61,13 +61,13 @@ const cardData = [
     },
     {
         dataSrc: "songs/The-Nights.mp3",
-        dataTitle: "The-Nights",
+        dataTitle: "The Nights",
         artist: "Avicii",
         imgSrc: "images/card14img.jpg"
     },
     {
         dataSrc: "songs/Shape-Of-You.mp3",
-        dataTitle: "Shape-Of-You",
+        dataTitle: "Shape Of You",
         artist: "Ed Sheeran",
         imgSrc: "images/card15img.jpg"
     },
