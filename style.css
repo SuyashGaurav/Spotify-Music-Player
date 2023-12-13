@@ -334,8 +334,7 @@ a {
 
 .volume-slider {
     width: 90%;
-    height: 4px;
-    background: #535353;
+    height: 3px;
     border-radius: 5px;
     margin-bottom: 0.7rem;
 }
@@ -411,8 +410,8 @@ a {
 
 .progress-bar::-webkit-slider-thumb {
     appearance: none;
-    height: 14px;
-    width: 14px;
+    height: 13px;
+    width: 13px;
     background-color: #1bd760;
     border-radius: 50%;
     margin-top: -5px;

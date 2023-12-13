@@ -50,7 +50,7 @@
                 <div class="box-2 hide-2">
                     <p class="box-p1">Let's find some podcasts to follow</p>
                     <p class="box-p2">We'll keep you updated on new episodes</p>
-                    <button class="badge">Browse podcasts</button>
+                    <button class="badge" onclick="showPodcast()">Browse podcasts</button>
                 </div>
             </div>
         </div>
@@ -131,6 +131,21 @@
                     <p class="card-title">Vaaste</p>
                     <p class="card-info">Dhvani Bhanushali, Nikhil D'Souza</p>
                 </div>
+
+                <div class="card" data-src="songs/Shape-Of-You.mp3" data-title="Shape-Of-You" data-artist="Ed Sheeran">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card15img.jpg" class="card-img">
+                    <p class="card-title">Shape-Of-You</p>
+                    <p class="card-info hide-2">Ed Sheeran</p>
+                </div>
+
+                <div class="card" data-src="../songs/Kesariya.mp3" data-title="Kesariya" data-artist="Rahat Fateh Ali Khan">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card16img.jpg" class="card-img">
+                    <p class="card-title">Kesariya</p>
+                    <p class="card-info">Pritam, Arijit Singh</p>
+                </div>
+
                 <div class="card" data-src="songs/Bad-Liar.mp3" data-title="Bad Liar" data-artist="Imagine Dragons">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="images/card12img.jpg" class="card-img">
@@ -142,6 +157,12 @@
                     <img src="images/card13img.jpg" class="card-img">
                     <p class="card-title">Choo Lo</p>
                     <p class="card-info">The Local Train</p>
+                </div>
+                <div class="card" data-src="songs/The-Nights.mp3" data-title="The Nights" data-artist="The Local Train">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card14img.jpg" class="card-img">
+                    <p class="card-title">The Nights</p>
+                    <p class="card-info">Avicii</p>
                 </div>
             </div>
 
@@ -186,7 +207,7 @@
         <div class="main-content" id="globalContent" style="display: none;">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
-                    <img src="images/backward_icon.png">
+                    <img src="images/backward_icon.png" onclick="showExistingContent()">
                     <img src="images/forward_icon.png" class="hide">
                 </div>
                 <div class="sticky-nav-options">
@@ -217,6 +238,20 @@
                 <p class="card-title">Happier</p>
                 <p class="card-info hide-2">Marshmello, Bastille</p>
             </div>
+            
+            <div class="card" data-src="songs/Shape-Of-You.mp3" data-title="Shape-Of-You" data-artist="Ed Sheeran">
+                <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                <img src="images/card15img.jpg" class="card-img">
+                <p class="card-title">Shape-Of-You</p>
+                <p class="card-info hide-2">Ed Sheeran</p>
+            </div>
+
+            <div class="card" data-src="songs/The-Nights.mp3" data-title="The Nights" data-artist="The Local Train">
+                <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                <img src="images/card14img.jpg" class="card-img">
+                <p class="card-title">The Nights</p>
+                <p class="card-info">Avicii</p>
+            </div>
 
             <div class="card" data-src="songs/Sunflower.mp3" data-title="Sunflower - Spider-Man" data-artist="Post Malone, Swae Lee">
                 <span class="play-icon"><i class="fa-solid fa-play"></i></span>
@@ -245,7 +280,7 @@
         <div class="main-content" id="indianContent" style="display: none;">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
-                    <img src="images/backward_icon.png">
+                    <img src="images/backward_icon.png" onclick="showExistingContent()">
                     <img src="images/forward_icon.png" class="hide">
                 </div>
                 <div class="sticky-nav-options">
@@ -284,6 +319,13 @@
                     <p class="card-info">Dhvani Bhanushali, Nikhil D'Souza</p>
                 </div>
 
+                <div class="card" data-src="../songs/Kesariya.mp3" data-title="Kesariya" data-artist="Rahat Fateh Ali Khan">
+                    <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+                    <img src="images/card16img.jpg" class="card-img">
+                    <p class="card-title">Kesariya</p>
+                    <p class="card-info">Pritam, Arijit Singh</p>
+                </div>
+
                 <div class="card" data-src="../songs/Choo-Lo.mp3" data-title="Choo Lo" data-artist="The Local Train">
                     <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                     <img src="images/card13img.jpg" class="card-img">
@@ -304,7 +346,7 @@
         <div class="main-content" id="searchContent" style="display: none;">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
-                    <img src="images/backward_icon.png">
+                    <img src="images/backward_icon.png" onclick="showExistingContent()">
                     <img src="images/forward_icon.png" class="hide">
                 </div>
                 <div class="sticky-nav-options">
@@ -340,10 +382,10 @@
 
             <div class="player">
                 <div class="player-controls">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-shuffle" onclick="changeSong()"></i>
+                    <i class="fa-solid fa-backward-step" onclick="changeSong()"></i>
                     <i class="fa-solid fa-play" id="playPauseIcon" onclick="togglePlayPause()"></i>
-                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-forward-step" onclick="changeSong()"></i>
                     <i class="fa-solid fa-repeat"></i>
                 </div>
                 <div class="playback-bar hide-2">

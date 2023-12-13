@@ -150,6 +150,15 @@ function showPlaylist() {
     }, 2000)
 }
 
+function showPodcast() {
+    var lyricsBox = document.getElementById('lyricsBox');
+    lyricsBox.innerHTML = "No podcasts found";
+    lyricsBox.style.display = 'block';
+    setTimeout(()=> {
+        lyricsBox.style.display = "none";
+    }, 2000)
+}
+
 //download
 window.addEventListener('load', function () {
     var downloadIcon = document.getElementById('downloadIcon');
@@ -172,3 +181,11 @@ window.addEventListener('load', function () {
       console.error('Download icon not found.');
     }
   });
+
+//Shuffle
+function changeSong(){
+    let cards = document.querySelectorAll('.card')
+    let randNo = Math.floor(Math.random() * cards.length)
+    let randCard = cards[randNo]
+    randCard.click()
+}

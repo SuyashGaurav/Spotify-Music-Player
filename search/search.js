@@ -58,6 +58,24 @@ const cardData = [
         dataTitle: "Choo Lo",
         artist: "The Local Train",
         imgSrc: "images/card13img.jpg"
+    },
+    {
+        dataSrc: "songs/The-Nights.mp3",
+        dataTitle: "The-Nights",
+        artist: "Avicii",
+        imgSrc: "images/card14img.jpg"
+    },
+    {
+        dataSrc: "songs/Shape-Of-You.mp3",
+        dataTitle: "Shape-Of-You",
+        artist: "Ed Sheeran",
+        imgSrc: "images/card15img.jpg"
+    },
+    {
+        dataSrc: "songs/Kesariya.mp3",
+        dataTitle: "Kesariya",
+        artist: "Pritam, Arijit Singh",
+        imgSrc: "images/card16img.jpg"
     }
     // Add other card data here
 ];
