@@ -470,6 +470,12 @@ a {
     .badge {
         font-size: 0.6rem;
     }
+    .card {
+        width: 120px;
+    }
+    .card-playlist {
+        width: 120px;
+    }
 }
 
 @media (max-width: 375px){
