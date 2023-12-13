@@ -35,3 +35,7 @@ The user interface is designed to be responsive, ensuring a seamless experience 
 <div style="display: flex;">
 <img width="960" alt="s2" src="https://github.com/SuyashGaurav/Spotify-Music-Player/assets/102952185/9c086a3e-6585-4d31-a5c3-f03da9740c9d">
 </div>
+
+<div style="display: flex;"> 
+  <img width="460" alt="s3" src="https://github.com/SuyashGaurav/Spotify-Music-Player/assets/102952185/99afb70e-f5c4-48de-845c-8356c34ba4dd">
+</div>
