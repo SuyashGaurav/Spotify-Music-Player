@@ -1,63 +1,63 @@
 const cardData = [
     {
-        dataSrc: "../songs/Mahiye.mp3",
+        dataSrc: "songs/Mahiye.mp3",
         dataTitle: "Mahiya Jinna Sohna",
         artist: "Darshan Ravel",
-        imgSrc: "../images/card2img.jpeg"
+        imgSrc: "images/card2img.jpeg"
     },
     {
-        dataSrc: "../songs/Alone.mp3",
+        dataSrc: "songs/Alone.mp3",
         dataTitle: "Alone",
         artist: "Marshmello",
-        imgSrc: "../images/card7img.jpg"
+        imgSrc: "images/card7img.jpg"
     },
     {
-        dataSrc: "../songs/Mere-paas.mp3",
+        dataSrc: "songs/Mere-paas.mp3",
         dataTitle: "Mere Paas Tum Ho",
         artist: "Rahat Fateh Ali Khan",
-        imgSrc: "../images/card3img.jpeg"
+        imgSrc: "images/card3img.jpeg"
     },
     {
-        dataSrc: "../songs/Aashiyan.mp3",
+        dataSrc: "songs/Aashiyan.mp3",
         dataTitle: "Aashiyan",
         artist: "Pritam, Shreya Ghoshal, Nikhil Paul George",
-        imgSrc: "../images/card4img.jpg"
+        imgSrc: "images/card4img.jpg"
     },
     {
-        dataSrc: "../songs/Bella-Ciao.mp3",
+        dataSrc: "songs/Bella-Ciao.mp3",
         dataTitle: "Bella Ciao",
         artist: "Money Heist",
-        imgSrc: "../images/card8img.jpg"
+        imgSrc: "images/card8img.jpg"
     },
     {
-        dataSrc: "../songs/Sunflower.mp3",
+        dataSrc: "songs/Sunflower.mp3",
         dataTitle: "Sunflower - Spider-Man",
         artist: "Post Malone, Swae Lee",
-        imgSrc: "../images/card9img.jpg"
+        imgSrc: "images/card9img.jpg"
     },
     {
-        dataSrc: "../songs/Happier.mp3",
+        dataSrc: "songs/Happier.mp3",
         dataTitle: "Happier",
         artist: "Marshmello, Bastille",
-        imgSrc: "../images/card10img.jpg"
+        imgSrc: "images/card10img.jpg"
     },
     {
-        dataSrc: "../songs/Vaaste.mp3",
+        dataSrc: "songs/Vaaste.mp3",
         dataTitle: "Vaaste",
         artist: "Dhvani Bhanushali, Nikhil D'Souza",
-        imgSrc: "../images/card11img.jpg"
+        imgSrc: "images/card11img.jpg"
     },
     {
-        dataSrc: "../songs/Bad-Liar.mp3",
+        dataSrc: "songs/Bad-Liar.mp3",
         dataTitle: "Bad Liar",
         artist: "Imagine Dragons",
-        imgSrc: "../images/card12img.jpg"
+        imgSrc: "images/card12img.jpg"
     },
     {
-        dataSrc: "../songs/Choo-Lo.mp3",
+        dataSrc: "songs/Choo-Lo.mp3",
         dataTitle: "Choo Lo",
         artist: "The Local Train",
-        imgSrc: "../images/card13img.jpg"
+        imgSrc: "images/card13img.jpg"
     }
     // Add other card data here
 ];
