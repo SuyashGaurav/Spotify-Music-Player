@@ -103,3 +103,29 @@ function showSearchContent(){
     var searchContent = document.getElementById("searchContent");
     searchContent.style.display = "block";
 }
+
+
+function toggleHeart(){
+    let likeBtn = document.getElementById("likeBtn");
+    likeBtn.classList.toggle("heart-filled");   
+}
+
+function updateVolume(volume) {
+    let audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.volume = parseFloat(volume);
+}
+
+function toggleMute() {
+    let audioPlayer = document.getElementById('audioPlayer');
+    let muteIcon = document.getElementById("muteIcon");
+    if(audioPlayer.volume == 0){
+        audioPlayer.volume = 0.8;
+        muteIcon.classList.remove("fa-volume-xmark");
+        muteIcon.classList.add("fa-volume-high");
+    }
+    else{
+        audioPlayer.volume = 0;
+        muteIcon.classList.remove("fa-volume-high");
+        muteIcon.classList.add("fa-volume-xmark");
+    }
+}

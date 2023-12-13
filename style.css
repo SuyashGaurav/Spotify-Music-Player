@@ -309,6 +309,11 @@ a {
     opacity: 1;
 }
 
+.heart-filled {
+    color: #1bd760;
+    opacity: 1;
+}
+
 .control {
     display: flex;
     justify-content: space-between;

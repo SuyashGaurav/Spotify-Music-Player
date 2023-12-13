@@ -335,7 +335,7 @@
                     <div class="album-title">Happier</div>
                     <div class="album-info hide-2">Marshmello</div>
                 </div>
-                <i class="fa-regular fa-heart hide-2"></i>
+                <i class="fa-regular fa-heart hide-2" id="likeBtn" onclick="toggleHeart()"></i>
             </div>
 
             <div class="player">
@@ -348,7 +348,7 @@
                 </div>
                 <div class="playback-bar hide-2">
                     <span class="curr-time">00:00</span>
-                    <input type="range" class="progress-bar" min="0" max="100" value="50" step="1" >
+                    <input type="range" class="progress-bar" min="0" max="100" value="50" step="1">
                     <span class="tot-time">3:33</span>
                 </div>
             </div>
@@ -357,9 +357,9 @@
                 <i class="fa-solid fa-music"></i>
                 <i class="fa-solid fa-download"></i>
                 <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-volume-high" id="muteIcon" onclick="toggleMute()"></i>
                 <div class="volume-slider-container">
-                    <input type="range" class="volume-slider" min="0" max="100" value="50" step="1" />
+                    <input type="range" class="volume-slider" min="0" max="1" value="1" step="0.1" oninput="updateVolume(this.value)"/>
                 </div>
             </div>
         </div>
