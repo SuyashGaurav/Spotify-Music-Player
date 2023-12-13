@@ -124,17 +124,21 @@ function search() {
             return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
         }
     });
+}
 
-    // Toggle play/pause icon functionality
-    playPauseIcon.addEventListener('click', function () {
-        if (audioPlayer.paused) {
-            audioPlayer.play();
-            playPauseIcon.classList.remove('fa-play');
-            playPauseIcon.classList.add('fa-pause');
-        } else {
-            audioPlayer.pause();
-            playPauseIcon.classList.remove('fa-pause');
-            playPauseIcon.classList.add('fa-play');
-        }
-    });
+
+var audioPlayer = document.getElementById('yourAudioPlayerId'); // Replace with your actual audio player ID
+
+function togglePlayPause() {
+    var playPauseIcon = document.getElementById('playPauseIcon');
+
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+        playPauseIcon.classList.remove('fa-play');
+        playPauseIcon.classList.add('fa-pause');
+    } else {
+        audioPlayer.pause();
+        playPauseIcon.classList.remove('fa-pause');
+        playPauseIcon.classList.add('fa-play');
+    }
 }
