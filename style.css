@@ -329,10 +329,13 @@ a {
         display: none;
     }
     .sidebar {
-        display: none;
+        width: 250px;
     }
     .player {
         margin-right: 20px;
+    }
+    .icons {
+        display: none;
     }
 }
 
@@ -420,5 +423,17 @@ a {
         font-size: 0.8rem;
         margin-top: 0.5rem;
         margin-bottom: 0.2rem;
+    }
+    .sidebar {
+        width: 80px;
+    }
+    .nav-option {
+        position: relative;
+        right: 18px;
+    }
+    .lib-option img {
+        position: relative;
+        left: 14px;
+        top: 8px;
     }
 }

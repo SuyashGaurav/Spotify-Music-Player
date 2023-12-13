@@ -39,3 +39,9 @@ button#searchButton:hover {
 input#searchInput::placeholder {
     color: #b3b3b3; /* Light gray color */
 }
+
+@media (max-width: 560px){
+    input#searchInput {
+        width: 180px;
+    }
+}
