@@ -159,6 +159,15 @@ function showPodcast() {
     }, 2000)
 }
 
+function showLibrary() {
+    var lyricsBox = document.getElementById('lyricsBox');
+    lyricsBox.innerHTML = "No libraries found";
+    lyricsBox.style.display = 'block';
+    setTimeout(()=> {
+        lyricsBox.style.display = "none";
+    }, 2000)
+}
+
 //download
 window.addEventListener('load', function () {
     var downloadIcon = document.getElementById('downloadIcon');
