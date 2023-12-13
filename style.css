@@ -428,15 +428,15 @@ a {
         margin-bottom: 0.2rem;
     }
     .sidebar {
-        width: 80px;
+        width: 50px;
     }
     .nav-option {
         position: relative;
-        right: 18px;
+        right: 33px;
     }
     .lib-option img {
         position: relative;
-        left: 14px;
+        right: 4px;
         top: 8px;
     }
 }
