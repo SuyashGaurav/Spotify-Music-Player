@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const albumTitle = document.querySelector('.album-title');
     const albumInfo = document.querySelector('.album-info');
     const albumImg = document.querySelector('.album img');
-
+    const progressGreen = document.querySelector('.progress-green');
+    // const greenContainer = document.querySelector('.green-container');
+    console.dir(progressGreen);
+    // playbackBar.addEventListener("input", (event) => {
+    //     console.dir(event.target);
+    // });
     const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => {
@@ -29,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 playbackBar.value = progress;
                 currTime.textContent = formatTime(audioPlayer.currentTime);
                 totTime.textContent = formatTime(audioPlayer.duration);
+                
             });
         });
     });
@@ -50,6 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
             playbackBar.value = progress;
             currTime.textContent = formatTime(audioPlayer.currentTime);
             totTime.textContent = formatTime(audioPlayer.duration);
+            progressGreen.style.width = progress*3+"px";
+            console.log(progress, progressGreen.style.width, progress*playbackBar.style.width+"px");
+            console.dir(progressGreen);
         });
     });
 
@@ -115,6 +124,11 @@ function toggleHeart(){
 function updateVolume(volume) {
     let audioPlayer = document.getElementById('audioPlayer');
     audioPlayer.volume = parseFloat(volume);
+}
+
+function updateSlider(value) {
+    let audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.currentTime = value*audioPlayer.duration/100;
 }
 
 function toggleMute() {

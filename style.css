@@ -396,7 +396,21 @@ a {
     align-items: center;
     margin-top: 0.4rem;
 }
-
+.green-container{
+    position: absolute;
+    width: 300px;
+    /* z-index: -1; */
+    pointer-events: none;
+}
+.progress-green{
+    /* width: 200px; */
+    background-color: white;
+    height: 4px;
+    border-radius: 5px;
+}
+.green-container:hover .progress-green{
+    background-color: #1bd760;
+}
 .progress-bar {
     width: 300px;
     height: 8px;
@@ -416,18 +430,26 @@ a {
     appearance: none;
     height: 13px;
     width: 13px;
-    background-color: #1bd760;
+    background-color: #1dd55f;
     border-radius: 50%;
     margin-top: -5px;
     border: 2px solid #fff;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    opacity: 0;
 }
-
-
+.progress-bar:hover::-webkit-slider-thumb{
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0s;
+}
+.progress-bar:hover ~.green-container .progress-green{
+    background-color: #1dd55f;
+    transition: background-color 0.2s ease-in 0s;
+}
 .curr-time {
     font-size: 13px;
     font-weight: 100;
-    margin-right: 0.6rem;
+    /* margin-right: 0.6rem; */
+    width: 30px;
 }
 
 .tot-time{

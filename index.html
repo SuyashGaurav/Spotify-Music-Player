@@ -389,9 +389,12 @@
                     <i class="fa-solid fa-repeat"></i>
                 </div>
                 <div class="playback-bar hide-2">
-                    <span class="curr-time">00:00</span>
-                    <input type="range" class="progress-bar" min="0" max="100" value="50" step="1">
+                    <span class="curr-time">0:00</span>
+                    <input type="range" class="progress-bar" min="0" max="100" value="50" step="0.1" oninput="updateSlider(this.value)" id="playback">
                     <span class="tot-time">3:33</span>
+                    <div class="green-container">
+                        <div class="progress-green"></div>
+                    </div>
                 </div>
             </div>
             <div id="lyricsBox">
