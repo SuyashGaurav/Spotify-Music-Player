@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 playbackBar.value = progress;
                 currTime.textContent = formatTime(audioPlayer.currentTime);
                 totTime.textContent = formatTime(audioPlayer.duration);
-                
+                progressGreen.style.width = progress*3+"px";  //progress-bar width: 300px
             });
         });
     });
@@ -124,6 +124,10 @@ function toggleHeart(){
 function updateVolume(volume) {
     let audioPlayer = document.getElementById('audioPlayer');
     audioPlayer.volume = parseFloat(volume);
+    if(muteIcon.classList.contains("fa-volume-xmark")){
+        muteIcon.classList.remove("fa-volume-xmark");
+        muteIcon.classList.add("fa-volume-high");
+    }
 }
 
 function updateSlider(value) {
@@ -134,13 +138,16 @@ function updateSlider(value) {
 function toggleMute() {
     let audioPlayer = document.getElementById('audioPlayer');
     let muteIcon = document.getElementById("muteIcon");
-    if(audioPlayer.volume == 0){
-        audioPlayer.volume = 0.8;
+    let volumeSlider = document.querySelector(".volume-slider")
+    if(muteIcon.classList.contains("fa-volume-xmark")){
+        audioPlayer.volume = 0.7;
+        volumeSlider.value = 0.7;
         muteIcon.classList.remove("fa-volume-xmark");
         muteIcon.classList.add("fa-volume-high");
     }
     else{
         audioPlayer.volume = 0;
+        volumeSlider.value = 0;
         muteIcon.classList.remove("fa-volume-high");
         muteIcon.classList.add("fa-volume-xmark");
     }
